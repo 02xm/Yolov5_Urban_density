@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "yolo":"../../components/yolo/yolo",
+        "result":"../../components/result/result",
+        "my":"../../components/my/my"
+
+    }
+}

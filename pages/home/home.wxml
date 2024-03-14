@@ -1,0 +1,17 @@
+
+<view wx:if="{{value == 'label_1'}}">
+    <yolo></yolo>
+</view>
+<view wx:elif="{{value == 'label_2'}}">
+    <result></result>
+</view>
+<view wx:elif="{{value == 'label_3'}}">
+    <my></my>
+</view>
+
+
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+    <t-tab-bar-item wx:for="{{list}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+        {{item.label}}
+    </t-tab-bar-item>
+</t-tab-bar>

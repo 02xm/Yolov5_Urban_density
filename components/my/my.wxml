@@ -1,0 +1,51 @@
+<!--components/my/my.wxml-->
+
+<view class="user">
+    <!-- <view wx:if="{{hasUserInfo}}"> -->
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <!-- </view> -->
+        <text class="name">用户昵称：{{userInfo.nickName}}</text>
+</view>
+<t-divider/>
+<t-notice-bar
+  visible="{{true}}"
+  prefixIcon="logo-wechat"
+  suffixIcon="chevron-right"
+  content="关于我们"
+  t-class="external-class"
+  t-class-prefix-icon="external-class-prefix-icon"
+  bindtap="setABoutVisible"
+></t-notice-bar>
+<t-divider/>
+<t-notice-bar
+  visible="{{true}}"
+  prefixIcon="attach"
+  suffixIcon="chevron-right"
+  content="更新日志"
+  t-class="external-class"
+  t-class-prefix-icon="external-class-prefix-icon"
+  bindtap="setUpdateVisible"
+
+></t-notice-bar>
+
+
+<t-dialog
+  visible="{{showAbout}}"
+  title="关于我们"
+  content="本小程序由重庆邮电大学图像认知实验室开发"
+  confirm-btn="{{ confirmBtn }}"
+  cancel-btn="取消"
+  bind:confirm="closeAboutDialog"
+  bind:cancel="closeAboutDialog"
+/>
+
+<t-dialog
+  visible="{{showUpdate}}"
+  title="更新日志"
+  content="2023-3-19更新：增加密集度估计功能"
+  confirm-btn="{{ confirmBtn }}"
+  cancel-btn="取消"
+  bind:confirm="closeUpdateDialog"
+  bind:cancel="closeUpdateDialog"
+/>
+

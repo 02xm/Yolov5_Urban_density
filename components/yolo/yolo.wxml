@@ -1,0 +1,12 @@
+<!--components/yolo/yolo.wxml-->
+
+<view class="container">
+    <t-image src="{{'/image/fenmian.png'}}" width="90%" height="450rpx" shape="round" aria-label="fenbian" />
+    <view wx:if="{{hasUserInfo}}">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+
+    <t-button wx:if="{{!hasUserInfo}}" theme="primary" class="home-button3" size="large" bindtap="getUserProfile">微信登录</t-button>
+    <t-button class="home-button2" size="large" theme="light" bindtap="getImageFromAlbum">从相册中选择</t-button>
+    <t-button class="home-button1" size="large" theme="light">拍照检测</t-button>
+</view>

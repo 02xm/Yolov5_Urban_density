@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "t-image": "tdesign-miniprogram/image/image",
+        "t-divider": "tdesign-miniprogram/divider/divider",
+        "t-sticky": "tdesign-miniprogram/sticky/sticky",
+        "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar"
+    }
+}

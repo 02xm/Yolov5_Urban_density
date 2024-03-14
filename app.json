@@ -1,0 +1,22 @@
+{
+  "pages":[
+      "pages/home/home",
+      "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "城市密集度估计系统",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-tab-bar": "tdesign-miniprogram/tab-bar/tab-bar",
+    "t-tab-bar-item": "tdesign-miniprogram/tab-bar-item/tab-bar-item",
+    "t-drawer": "tdesign-miniprogram/drawer/drawer",
+    "t-divider": "tdesign-miniprogram/divider/divider",
+    "t-sticky": "tdesign-miniprogram/sticky/sticky",
+    "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar"
+  }
+}

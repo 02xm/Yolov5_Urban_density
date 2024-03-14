@@ -1,0 +1,14 @@
+<!--components/result/result.wxml-->
+
+<scroll-view scroll-y="true" style="height: 1050rpx;">
+    <t-divider content="原始图片" />
+    <t-image src="{{'/image/ori.png'}}" width="100%" height="450rpx" shape="round" aria-label="ori" />
+    <t-divider content="检测图片" />
+    <t-image src="{{'/image/det.png'}}" width="100%" height="450rpx" shape="round" aria-label="ori" />
+    <t-divider content="检测结果" />
+    <t-notice-bar visible="{{true}}" theme="success" content="检测成功"></t-notice-bar>
+    <t-notice-bar visible="{{true}}" prefixIcon="{{false}}" content="图中存在的目标及个数为：小车26个，摩托车20个，行人7个，自行车1个，三轮车1个，面包车1个。"></t-notice-bar>
+    <t-notice-bar visible="{{true}}" prefixIcon="{{false}}" theme="error" content="密集程度：中等"></t-notice-bar>
+</scroll-view>
+
+
